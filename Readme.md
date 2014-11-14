@@ -1,8 +1,8 @@
-[![Build Status](https://circleci.com/gh/segmentio/integration-kissmetrics.png)](https://circleci.com/gh/segmentio/integration-kissmetrics)
+[![Build Status](https://circleci.com/gh/segmentio/integration-kissmetrics/tree/master.png?style=badge)](https://circleci.com/gh/segmentio/integration-kissmetrics/tree/master)
 
-# KISSmetrics server-side integration.
+# integration-kissmetrics
 
-Write me...
+KISSmetrics server-side integration for Segment.
 
 
 ## License
