@@ -1,0 +1,28 @@
+{
+  "input": {
+    "userId": "user-id",
+    "anonymousId": "anonymous-id",
+    "type": "identify",
+    "timestamp": "2014",
+    "traits": {
+      "firstName": "John",
+      "lastName": "Doe"
+    }
+  },
+  "output": {
+    "identify": {
+      "_p": "user-id",
+      "firstName": "John",
+      "lastName": "Doe",
+      "id": "user-id",
+      "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
+      "_t": 1388534400,
+      "_d": 1
+    },
+    "alias": {
+      "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
+      "_p": "user-id",
+      "_n": "anonymous-id"
+    }
+  }
+}
