@@ -22,8 +22,7 @@ describe('KISSmetrics', function () {
       .name('KISSmetrics')
       .endpoint('https://trk.kissmetrics.com')
       .ensure('settings.apiKey')
-      .channels(['server'])
-      .retries(2);
+      .channels(['server']);
   });
 
   describe('.validate()', function () {
