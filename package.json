@@ -16,7 +16,7 @@
     "extend": "^2.0.0",
     "is": "^2.1.0",
     "isodate-traverse": "^0.3.2",
-    "segmentio-integration": "^3.0.3",
+    "segmentio-integration": "^3.0.5",
     "unix-time": "^1.0.1"
   },
   "devDependencies": {
