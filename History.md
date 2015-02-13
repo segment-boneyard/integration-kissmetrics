@@ -1,4 +1,10 @@
 
+1.0.7 / 2015-02-13
+==================
+
+ * fixed sending 'products: 0' when the property isn't set
+ * update circle template
+
 1.0.6 / 2014-12-08
 ==================
 
