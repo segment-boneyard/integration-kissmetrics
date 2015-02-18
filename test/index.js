@@ -109,4 +109,92 @@ describe('KISSmetrics', function () {
       kissmetrics.alias(alias, done);
     });
   });
+
+  describe('.page()', function(){
+    it('should be able to track all pages', function(done){
+      var json = test.fixture('page-all');
+      test
+        .set(settings)
+        .set(json.settings)
+        .page(json.input)
+        .query(json.output)
+        .end(function(err, res){
+          if (err) return done(err);
+          assert.equal(200, res[0].status);
+          done();
+        });
+    });
+
+    it('should be able to track categorized pages', function(done){
+      var json = test.fixture('page-categorized');
+      test
+        .set(settings)
+        .set(json.settings)
+        .page(json.input)
+        .query(json.output)
+        .end(function(err, res){
+          if (err) return done(err);
+          assert.equal(200, res[0].status);
+          done();
+        });
+    });
+
+    it('should be able to track named pages', function(done){
+      var json = test.fixture('page-named');
+      test
+        .set(settings)
+        .set(json.settings)
+        .page(json.input)
+        .query(json.output)
+        .end(function(err, res){
+          if (err) return done(err);
+          assert.equal(200, res[0].status);
+          done();
+        });
+    });
+  });
+
+  describe('.screen()', function(){
+    it('should be able to track all screens', function(done){
+      var json = test.fixture('screen-all');
+      test
+        .set(settings)
+        .set(json.settings)
+        .screen(json.input)
+        .query(json.output)
+        .end(function(err, res){
+          if (err) return done(err);
+          assert.equal(200, res[0].status);
+          done();
+        });
+    });
+
+    it('should be able to track categorized screens', function(done){
+      var json = test.fixture('screen-categorized');
+      test
+        .set(settings)
+        .set(json.settings)
+        .screen(json.input)
+        .query(json.output)
+        .end(function(err, res){
+          if (err) return done(err);
+          assert.equal(200, res[0].status);
+          done();
+        });
+    });
+
+    it('should be able to track named screens', function(done){
+      var json = test.fixture('screen-named');
+      test
+        .set(settings)
+        .set(json.settings)
+        .screen(json.input)
+        .query(json.output)
+        .end(function(err, res){
+          if (err) return done(err);
+          assert.equal(200, res[0].status);
+          done();
+        });
+    });
+  });
 });
