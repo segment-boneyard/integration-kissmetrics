@@ -41,45 +41,6 @@ exports.mapper = function(dirname){
 };
 
 /**
- * Create ecommerce transaction.
- *
- * @param {Object} options
- * @return {Track}
- */
-
-exports.transaction = function(options){
-  return new facade.Track(merge({
-    userId: firstId,
-    channel: 'server',
-    timestamp: new Date,
-    event: 'Completed Order',
-    properties: {
-      orderId: 't-39a224df',
-      total: 99.99,
-      shipping: 13.99,
-      tax: 20.99,
-      products: [{
-        quantity: 1,
-        price: 24.75,
-        name: 'Sony Pulse',
-        sku: 'p-957c416f',
-        category: 'Entertainment'
-      }, {
-        quantity: 3,
-        price: 24.75,
-        name: 'Sony PS3',
-        sku: 'p-5bd14e17',
-        category: 'Entertainment'
-      }]
-    },
-    options: {
-      ip: '4.184.68.0',
-      userAgent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)'
-    }
-  }, options));
-};
-
-/**
  * Create a track call merged from `options`
  *
  * @param {Object} options

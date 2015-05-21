@@ -5,6 +5,7 @@ var facade = require('segmentio-facade');
 var KISSmetrics = require('..');
 var should = require('should');
 var assert = require('assert');
+var qs = require('querystring');
 
 describe('KISSmetrics', function () {
   var kissmetrics;
@@ -12,7 +13,7 @@ describe('KISSmetrics', function () {
   var test;
 
   beforeEach(function(){
-    settings = { apiKey: '2b93bdf937c54fc7da2b5c6015c273bf3919c273' };
+    settings = { apiKey: '57a0897d0c675651f450229d65ccf4a605112804' };
     kissmetrics = new KISSmetrics(settings);
     test = Test(kissmetrics, __dirname);
   });
@@ -94,6 +95,52 @@ describe('KISSmetrics', function () {
       result['Billing Amount'].should.eql(19.95);
       result._n.should.eql('Baked a cake');
     });
+  });
+
+  describe('.completedOrder()', function(){
+    it('should send a completed order call correctly', function(done){
+      settings.prefixProperties = true;
+      var json = test.fixture('track-ecommerce');
+
+      test
+        .requests(3)
+        .set(settings)
+        .track(json.input);
+
+      test
+        .request(0)
+        .expects(200);
+      test
+        .request(1)
+        .expects(200);
+      test
+        .request(2)
+        .expects(200);
+
+      test.end(done);
+    });
+
+    it('should send an additional call for each object in .products after the initial order completed call');
+
+    // it('xxx rewrite me xxx', function() {
+    //   // event: Order Completed
+    //   var json = test.fixture('completed-order-with-2-products');
+    //   var req = test
+    //     .set(settings)
+    //     .set(json.settings)
+    //     .completedOrder(json.input)
+    //     .query(json.output);
+    //     .request(1)
+    //     .end(function(err, res){
+    //       if (err) return done(err);
+    //       assert.equal(200, res[0].status);
+    //       assert.deepEqual(res.req.body, json.output.products[0]);
+    //       done();
+    //     });
+    // });
+
+  //   it('should send no additional calls when .products is empty');
+  //   it('should prefix product properties if prefixProperties is enabled', function(){
   });
 
   describe('.identify()', function () {

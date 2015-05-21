@@ -33,17 +33,38 @@
     }
   },
   "output": {
-    "Billing Amount": 19.99,
-    "Completed Order - list": "1,2,3",
-    "Completed Order - products": "[object Object],[object Object]",
-    "Completed Order - revenue": "19.99",
-    "Completed Order - some-property": "true",
-    "Completed Order - time": 1388534400,
-    "_p": "user-id",
-    "_t": 1388534400,
-    "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
-    "_n": "Completed Order",
-    "_d": 1,
-    "products": 2
+    "event": {
+      "Billing Amount": 19.99,
+      "Completed Order - list": "1,2,3",
+      "Completed Order - revenue": "19.99",
+      "Completed Order - some-property": "true",
+      "Completed Order - time": 1388534400,
+      "_p": "user-id",
+      "_t": 1388534400,
+      "_k": "57a0897d0c675651f450229d65ccf4a605112804",
+      "_n": "Completed Order",
+      "_d": 1,
+      "products": 2
+    },
+    "products": [
+      {
+        "Completed Order - sku": "sony-pulse-sku",
+        "Completed Order - category": "gaming",
+        "Completed Order - price": "199.99",
+        "Completed Order - name": "sony pulse",
+        "Completed Order - quantity": "1",
+        "_k": "57a0897d0c675651f450229d65ccf4a605112804",
+        "_d": 1
+      },
+      {
+        "Completed Order - sku": "sony-playstation-4-sku",
+        "Completed Order - category": "gaming",
+        "Completed Order - price": "799.99",
+        "Completed Order - name": "sony playstation 4",
+        "Completed Order - quantity": "1",
+        "_k": "57a0897d0c675651f450229d65ccf4a605112804",
+        "_d": 1
+      }
+    ]
   }
 }
