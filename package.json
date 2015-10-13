@@ -13,9 +13,13 @@
     "test": "make test"
   },
   "dependencies": {
+    "batch": "^0.5.3",
     "extend": "^2.0.0",
     "is": "^2.1.0",
     "isodate-traverse": "^0.3.2",
+    "lodash.map": "^3.1.4",
+    "lodash.omit": "^3.1.0",
+    "segmentio-facade": "2.x",
     "segmentio-integration": "^3.2.0",
     "unix-time": "^1.0.1"
   },
@@ -25,7 +29,6 @@
     "merge-util": "^0.1.0",
     "mocha": "2.x",
     "ms": "0.x",
-    "segmentio-facade": "2.x",
     "segmentio-integration-tester": "1.x",
     "should": "^4.3.0",
     "uid": "0.0.2",

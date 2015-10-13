@@ -60,10 +60,16 @@ describe('KISSmetrics', function () {
         settings.prefixProperties = true;
         test.maps('track-prefix', settings);
       });
+    });
 
-      it('should map ecommerce events correctly', function(){
+    describe('completedOrder', function() {
+      it('should map a basic event', function() {
+        test.maps('track-completed-order', settings);
+      });
+
+      it('should map prefixed properties', function() {
         settings.prefixProperties = true;
-        test.maps('track-ecommerce', settings);
+        test.maps('track-completed-order-prefixed', settings);
       });
     });
 
@@ -93,6 +99,37 @@ describe('KISSmetrics', function () {
       result['layers'].should.eql('chocolate,strawberry,fudge');
       result['Billing Amount'].should.eql(19.95);
       result._n.should.eql('Baked a cake');
+    });
+  });
+
+  describe('orderCompleted', function() {
+    it('should perform an event call', function(done) {
+      var json = test.fixture('track-completed-order');
+      test
+        .set(settings)
+        .track(json.input)
+        .requests(3)
+        .request(0)
+        .query(json.output.event)
+        .end(done);
+    });
+
+    it('should perform a set call per product', function(done) {
+      var json = test.fixture('track-completed-order');
+      var suite = test
+        .requests(3)
+        .set(settings)
+        .track(json.input);
+
+      suite
+        .request(1)
+        .query(json.output.products[0]);
+
+      suite
+        .request(2)
+        .query(json.output.products[1]);
+
+      suite.end(done);
     });
   });
 
