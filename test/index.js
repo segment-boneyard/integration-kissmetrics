@@ -78,6 +78,12 @@ describe('KISSmetrics', function () {
         test.maps('alias-basic', settings);
       });
     });
+
+    describe('group', function(){
+      it('should map basic group', function(){
+        test.maps('group-basic', settings);
+      });
+    });
   });
 
   describe('.track()', function () {
@@ -144,6 +150,13 @@ describe('KISSmetrics', function () {
     var alias = helpers.alias();
     it('should be able to alias properly', function(done){
       kissmetrics.alias(alias, done);
+    });
+  });
+
+  describe('.group()', function () {
+    var group = helpers.group();
+    it('should be able to group properly', function(done){
+      kissmetrics.group(group, done);
     });
   });
 
