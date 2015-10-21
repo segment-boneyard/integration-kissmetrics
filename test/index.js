@@ -86,16 +86,6 @@ describe('KISSmetrics', function () {
       kissmetrics.track(track, done);
     });
 
-    it('should properly set nested objects as properties', function(done){
-      var json = test.fixture('track-clean');
-
-      test
-        .set(settings)
-        .track(json.input)
-        .query(json.output)
-        .expects(200, done);
-    });
-
     it('should prefix event properties if prefixProperties is enabled', function(){
       kissmetrics.settings.prefixProperties = true;
       var result = kissmetrics.mapper.track.call(kissmetrics, track);
