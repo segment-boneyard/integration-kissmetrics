@@ -56,6 +56,10 @@ describe('KISSmetrics', function () {
         test.maps('track-basic', settings);
       });
 
+      it('should map clean track', function(){
+        test.maps('track-clean', settings);
+      });
+
       it('should prefix properties if `.prefixProperties` is true', function(){
         settings.prefixProperties = true;
         test.maps('track-prefix', settings);

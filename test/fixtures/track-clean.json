@@ -11,7 +11,8 @@
       "list": [1, 2, 3],
       "school": {
         "middle": { "state": "RI" },
-        "college": { "state": "MA" }
+        "college": { "state": "MA" },
+        "jobs": ["segment", "nasa"]
       }
     }
   },
@@ -23,6 +24,7 @@
     "list": "1,2,3",
     "school.middle.state": "RI",
     "school.college.state": "MA",
+    "school.jobs": "segment,nasa",
     "_p": "hanhan",
     "_t": 1388534400,
     "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
