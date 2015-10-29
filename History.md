@@ -1,4 +1,10 @@
 
+1.0.11 / 2015-10-29
+===================
+
+  * cover edge case of arrays inside nested obj
+  * flatten nested objects to top level
+
 1.0.10 / 2015-10-29
 ===================
 
