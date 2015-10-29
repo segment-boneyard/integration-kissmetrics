@@ -1,4 +1,10 @@
 
+1.0.9 / 2015-10-29
+==================
+
+  * Update KISSMetrics page call
+  * Add Completed Order handler
+
 1.0.8 / 2015-02-19
 ==================
 
