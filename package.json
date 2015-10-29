@@ -15,6 +15,7 @@
   "dependencies": {
     "batch": "^0.5.3",
     "extend": "^2.0.0",
+    "flat": "^1.6.0",
     "is": "^2.1.0",
     "isodate-traverse": "^0.3.2",
     "lodash.map": "^3.1.4",

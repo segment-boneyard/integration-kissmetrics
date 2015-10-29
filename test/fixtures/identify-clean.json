@@ -1,6 +1,6 @@
 {
   "input": {
-    "userId": "user-id",
+    "userId": "hankim",
     "type": "identify",
     "timestamp": "2014",
     "traits": {
@@ -8,17 +8,19 @@
       "lastName": "Doe",
       "null": null,
       "address": {
-        "city": "SF"
+        "home": { "city": "SF" },
+        "school": { "city": "BOS" }
       }
     }
   },
   "output": {
     "identify": {
-      "_p": "user-id",
+      "_p": "hankim",
       "firstName": "John",
       "lastName": "Doe",
-      "address": "{\"city\":\"SF\"}",
-      "id": "user-id",
+      "address.home.city": "SF",
+      "address.school.city": "BOS",
+      "id": "hankim",
       "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
       "_t": 1388534400,
       "_d": 1
