@@ -11,7 +11,9 @@
       "name": "Home",
       "url": "http://example.com/example"
     },
-    "context": {}
+    "context": {
+      "ip": "10.0.0.1"
+    }
   },
   "output": {
       "_p": "user-id",
@@ -19,6 +21,7 @@
       "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
       "_t": 1388534400,
       "_n": "Viewed Home Page",
+      "_ip": "10.0.0.1",
       "Page - name": "Home",
       "Page - url": "http://example.com/example"
     }
