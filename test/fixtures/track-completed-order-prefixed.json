@@ -23,10 +23,6 @@
         }
       ],
       "revenue": 999.98
-    },
-    "context": {
-      "ip": "10.0.0.1",
-      "userAgent": "Mozilla/5.0 (PlayBook; U; RIM Tablet OS 1.0.0; en-US) AppleWebKit/534.11 (KHTML, like Gecko) Version/7.1.0.7 Safari/534.11"
     }
   },
   "output": {
@@ -37,8 +33,6 @@
       "_n": "Completed Order",
       "_p": "user-id",
       "_t": 1388534400,
-      "_ip": "10.0.0.1",
-      "_ua": "Mozilla/5.0 (PlayBook; U; RIM Tablet OS 1.0.0; en-US) AppleWebKit/534.11 (KHTML, like Gecko) Version/7.1.0.7 Safari/534.11",
       "Completed Order - orderId": 12345,
       "Completed Order - revenue": 999.98
     },

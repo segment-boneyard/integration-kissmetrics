@@ -8,9 +8,6 @@
       "name": "Initech",
       "industry": "Technology",
       "employees": 329
-    },
-    "context": {
-      "ip": "10.0.0.1"
     }
   },
   "output": {
@@ -21,7 +18,6 @@
     "Group - employees": 329,
     "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
     "_t": 1388534400,
-    "_d": 1,
-    "_ip": "10.0.0.1"
+    "_d": 1
   }
 }
