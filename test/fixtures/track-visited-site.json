@@ -2,36 +2,24 @@
   "input": {
     "type": "track",
     "userId": "user-id",
-    "event": "some event",
+    "event": "visited site",
     "timestamp": "2014",
-    "properties": {
-      "revenue": 19.99,
-      "some-property": true,
-      "nested": {
-        "foo": {
-          "bar": "a"
-        }
-      }
-    },
+    "properties": {},
     "context": {
       "ip": "10.0.0.1",
       "userAgent": "Mozilla/5.0 (PlayBook; U; RIM Tablet OS 1.0.0; en-US) AppleWebKit/534.11 (KHTML, like Gecko) Version/7.1.0.7 Safari/534.11",
       "Kissmetrics": {
-        "trackIp": true,
-        "trackUserAgent": true
+        "trackIp": false,
+        "trackUserAgent": false
       }
     }
   },
   "output": {
-    "Billing Amount": 19.99,
-    "some event - some-property": "true",
-    "some event - revenue": "19.99",
-    "some event - nested.foo.bar": "a",
+    "_d": 1,
+    "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
+    "_n": "visited site",
     "_p": "user-id",
     "_t": 1388534400,
-    "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
-    "_n": "some event",
-    "_d": 1,
     "_ip": "10.0.0.1",
     "_ua": "Mozilla/5.0 (PlayBook; U; RIM Tablet OS 1.0.0; en-US) AppleWebKit/534.11 (KHTML, like Gecko) Version/7.1.0.7 Safari/534.11"
   }
