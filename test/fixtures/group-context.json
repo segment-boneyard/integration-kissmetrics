@@ -1,17 +1,13 @@
 {
   "input": {
-    "type": "track",
     "userId": "user-id",
-    "event": "some event",
+    "groupId": "group-id",
+    "type": "group",
     "timestamp": "2014",
-    "properties": {
-      "revenue": 19.99,
-      "some-property": true,
-      "nested": {
-        "foo": {
-          "bar": "a"
-        }
-      }
+    "traits": {
+      "name": "Initech",
+      "industry": "Technology",
+      "employees": 329
     },
     "context": {
       "ip": "10.0.0.1",
@@ -23,14 +19,13 @@
     }
   },
   "output": {
-    "Billing Amount": 19.99,
-    "some event - some-property": "true",
-    "some event - revenue": "19.99",
-    "some event - nested.foo.bar": "a",
     "_p": "user-id",
-    "_t": 1388534400,
+    "Group - id": "group-id",
+    "Group - name": "Initech",
+    "Group - industry": "Technology",
+    "Group - employees": 329,
     "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
-    "_n": "some event",
+    "_t": 1388534400,
     "_d": 1,
     "_ip": "10.0.0.1",
     "_ua": "Mozilla/5.0 (PlayBook; U; RIM Tablet OS 1.0.0; en-US) AppleWebKit/534.11 (KHTML, like Gecko) Version/7.1.0.7 Safari/534.11"
