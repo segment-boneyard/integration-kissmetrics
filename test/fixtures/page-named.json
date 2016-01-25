@@ -11,7 +11,8 @@
       "url": "http://example.com/example"
     },
     "context": {
-      "ip": "10.0.0.1"
+      "ip": "10.0.0.1",
+      "trackIp": true
     }
   },
   "output": {
