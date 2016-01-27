@@ -3,7 +3,8 @@
     "previousId": "previous-id",
     "type": "alias",
     "userId": "user-id",
-    "timestamp": "2014"
+    "timestamp": "2014",
+    "context": {}
   },
   "output": {
     "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",

@@ -8,7 +8,8 @@
       "name": "Initech",
       "industry": "Technology",
       "employees": 329
-    }
+    },
+    "context": {}
   },
   "output": {
     "_p": "user-id",
