@@ -56,6 +56,10 @@ describe('KISSmetrics', function () {
         test.maps('track-basic', settings);
       });
 
+      it('should map basic track and leave out ip and userAgent if not passed in context object', function(){
+        test.maps('track-no-ip-or-ua', settings);
+      });
+
       it('should map clean track', function(){
         test.maps('track-clean', settings);
       });
@@ -205,6 +209,20 @@ describe('KISSmetrics', function () {
 
     it('should be able to track named pages', function(done){
       var json = test.fixture('page-named');
+      test
+        .set(settings)
+        .set(json.settings)
+        .page(json.input)
+        .query(json.output)
+        .end(function(err, res){
+          if (err) return done(err);
+          assert.equal(200, res[0].status);
+          done();
+        });
+    });
+
+    it('should be able to track page calls and not include ip or userAgent if not included in context object', function(done){
+      var json = test.fixture('page-no-ip-or-ua');
       test
         .set(settings)
         .set(json.settings)
