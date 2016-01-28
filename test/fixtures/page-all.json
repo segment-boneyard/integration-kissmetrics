@@ -11,7 +11,10 @@
       "name": "Home",
       "url": "http://example.com/example"
     },
-    "context": {}
+    "context": {
+      "ip": "4.184.68.0",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+    }
   },
   "output": {
       "_p": "user-id",
@@ -19,6 +22,8 @@
       "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
       "_t": 1388534400,
       "_n": "Viewed Home Page",
+      "_ip": "4.184.68.0",
+      "_ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)",
       "Page - name": "Home",
       "Page - url": "http://example.com/example"
     }
