@@ -7,7 +7,8 @@
     "traits": {
       "firstName": "John",
       "lastName": "Doe"
-    }
+    },
+    "context": {}
   },
   "output": {
     "identify": {

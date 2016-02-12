@@ -11,7 +11,8 @@
         "home": { "city": "SF" },
         "school": { "city": "BOS" }
       }
-    }
+    },
+    "context": {}
   },
   "output": {
     "identify": {

@@ -49,6 +49,10 @@ describe('KISSmetrics', function () {
       it('should clean and stringify objects', function(){
         test.maps('identify-clean', settings);
       });
+
+      it('should map ip and user agent', function(){
+        test.maps('identify-context', settings);
+      });
     });
 
     describe('track', function(){
@@ -63,6 +67,14 @@ describe('KISSmetrics', function () {
       it('should prefix properties if `.prefixProperties` is true', function(){
         settings.prefixProperties = true;
         test.maps('track-prefix', settings);
+      });
+
+      it('should map ip and user agent when flagged to track them', function(){
+        test.maps('track-context', settings);
+      });
+
+      it('should map ip and user agent when event is "visited site"', function(){
+        test.maps('track-visited-site', settings);
       });
     });
 
@@ -81,11 +93,19 @@ describe('KISSmetrics', function () {
       it('should map basic alias', function(){
         test.maps('alias-basic', settings);
       });
+
+      it('should map ip and user agent', function(){
+        test.maps('alias-context', settings);
+      });
     });
 
     describe('group', function(){
       it('should map basic group', function(){
         test.maps('group-basic', settings);
+      });
+
+      it('should map ip and user agent', function(){
+        test.maps('group-context', settings);
       });
     });
   });
@@ -252,6 +272,20 @@ describe('KISSmetrics', function () {
         .set(settings)
         .set(json.settings)
         .screen(json.input)
+        .query(json.output)
+        .end(function(err, res){
+          if (err) return done(err);
+          assert.equal(200, res[0].status);
+          done();
+        });
+    });
+
+    it('should map ip and user agent', function(done){
+      var json = test.fixture('page-context');
+      test
+        .set(settings)
+        .set(json.settings)
+        .page(json.input)
         .query(json.output)
         .end(function(err, res){
           if (err) return done(err);
