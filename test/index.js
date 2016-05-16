@@ -49,6 +49,10 @@ describe('KISSmetrics', function () {
       it('should clean and stringify objects', function(){
         test.maps('identify-clean', settings);
       });
+
+      it('should pass along IP and userAgent', function(){
+        test.maps('identify-ip-ua', settings);
+      });
     });
 
     describe('track', function(){
@@ -64,6 +68,10 @@ describe('KISSmetrics', function () {
         settings.prefixProperties = true;
         test.maps('track-prefix', settings);
       });
+
+      it('should pass along IP and userAgent', function(){
+        test.maps('track-ip-ua', settings);
+      });
     });
 
     describe('completedOrder', function() {
@@ -75,17 +83,41 @@ describe('KISSmetrics', function () {
         settings.prefixProperties = true;
         test.maps('track-completed-order-prefixed', settings);
       });
+
+      it('should pass along IP and userAgent', function(){
+        test.maps('track-completed-order-ip-ua', settings);
+      });
     });
 
     describe('alias', function(){
       it('should map basic alias', function(){
         test.maps('alias-basic', settings);
       });
+
+      it('should pass along IP and userAgent', function(){
+        test.maps('alias-ip-ua', settings);
+      });
     });
 
     describe('group', function(){
       it('should map basic group', function(){
         test.maps('group-basic', settings);
+      });
+
+      it('should pass along IP and userAgent', function(){
+        test.maps('group-ip-ua', settings);
+      });
+    });
+
+    describe('screen', function(){
+      it('should pass along IP and userAgent', function(){
+        test.maps('screen-ip-ua', settings);
+      });
+    });
+
+    describe('page', function(){
+      it('should pass along IP and userAgent', function(){
+        test.maps('page-ip-ua', settings);
       });
     });
   });

@@ -1,0 +1,29 @@
+{
+  "input": {
+    "userId": "user-id",
+    "groupId": "group-id",
+    "type": "group",
+    "timestamp": "2014",
+    "traits": {
+      "name": "Initech",
+      "industry": "Technology",
+      "employees": 329
+    },
+    "context": {
+      "ip": "8.8.8.8",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+    }
+  },
+  "output": {
+    "_p": "user-id",
+    "Group - id": "group-id",
+    "Group - name": "Initech",
+    "Group - industry": "Technology",
+    "Group - employees": 329,
+    "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
+    "_t": 1388534400,
+    "_d": 1,
+    "_ip": "8.8.8.8",
+    "_ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+  }
+}

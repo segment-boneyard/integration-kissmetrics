@@ -1,0 +1,30 @@
+{
+  "settings": {
+    "trackAllPages": true
+  },
+  "input": {
+    "type": "screen",
+    "userId": "user-id",
+    "timestamp": "2014",
+    "name": "Home",
+    "properties": {
+      "name": "Home",
+      "url": "http://example.com/example"
+    },
+    "context": {
+      "ip": "8.8.8.8",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+    }
+  },
+  "output": {
+      "_p": "user-id",
+      "_d": 1,
+      "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
+      "_t": 1388534400,
+      "_n": "Viewed Home Screen",
+      "Screen - name": "Home",
+      "Screen - url": "http://example.com/example",
+      "_ip": "8.8.8.8",
+      "_ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+    }
+}
