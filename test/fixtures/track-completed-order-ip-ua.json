@@ -1,0 +1,74 @@
+{
+  "input": {
+    "type": "track",
+    "userId": "user-id",
+    "event": "Completed Order",
+    "timestamp": "2014",
+    "properties": {
+      "orderId": 12345,
+      "products": [
+        {
+          "sku": "sony-pulse-sku",
+          "category": "gaming",
+          "price": 199.99,
+          "name": "sony pulse",
+          "quantity": 1
+        },
+        {
+          "sku": "sony-playstation-4-sku",
+          "category": "gaming",
+          "price": 799.99,
+          "name": "sony playstation 4",
+          "quantity": 1
+        }
+      ],
+      "revenue": 999.98
+    },
+    "context": {
+      "ip": "8.8.8.8",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+    }
+  },
+  "output": {
+    "event": {
+      "Billing Amount": 999.98,
+      "_d": 1,
+      "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
+      "_n": "Completed Order",
+      "_p": "user-id",
+      "_t": 1388534400,
+      "orderId": 12345,
+      "revenue": 999.98,
+      "_ip": "8.8.8.8",
+      "_ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+    },
+    "products": [
+      {
+        "_d": 1,
+        "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
+        "_p": "user-id",
+        "_t": 1388534400,
+        "category": "gaming",
+        "name": "sony pulse",
+        "price": 199.99,
+        "quantity": 1,
+        "sku": "sony-pulse-sku",
+        "_ip": "8.8.8.8",
+        "_ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+      },
+      {
+        "_d": 1,
+        "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
+        "_p": "user-id",
+        "_t": 1388534401,
+        "category": "gaming",
+        "name": "sony playstation 4",
+        "price": 799.99,
+        "quantity": 1,
+        "sku": "sony-playstation-4-sku",
+        "_ip": "8.8.8.8",
+        "_ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+      }
+    ]
+  }
+}

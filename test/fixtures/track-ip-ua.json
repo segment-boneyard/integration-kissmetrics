@@ -1,0 +1,33 @@
+{
+  "input": {
+    "type": "track",
+    "userId": "user-id",
+    "event": "some event",
+    "timestamp": "2014",
+    "properties": {
+      "revenue": 19.99,
+      "some-property": true,
+      "time": "2014-01-01",
+      "list": [1, 2, 3],
+      "object": {}
+    },
+    "context": {
+      "ip": "8.8.8.8",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+    }
+  },
+  "output": {
+    "Billing Amount": 19.99,
+    "some-property": "true",
+    "revenue": "19.99",
+    "time": 1388534400,
+    "list": "1,2,3",
+    "_p": "user-id",
+    "_t": 1388534400,
+    "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
+    "_n": "some event",
+    "_d": 1,
+    "_ip": "8.8.8.8",
+    "_ua": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)"
+  }
+}
