@@ -2,7 +2,7 @@
   "input": {
     "type": "track",
     "userId": "user-id",
-    "event": "Completed Order",
+    "event": "Order Completed",
     "timestamp": "2014",
     "properties": {
       "orderId": 12345,
@@ -34,7 +34,7 @@
       "Billing Amount": 999.98,
       "_d": 1,
       "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
-      "_n": "Completed Order",
+      "_n": "Order Completed",
       "_p": "user-id",
       "_t": 1388534400,
       "orderId": 12345,

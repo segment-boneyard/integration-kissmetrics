@@ -2,7 +2,7 @@
   "input": {
     "type": "track",
     "userId": "user-id",
-    "event": "Completed Order",
+    "event": "Order Completed",
     "timestamp": "2014",
     "properties": {
       "orderId": 12345,
@@ -30,11 +30,11 @@
       "Billing Amount": 999.98,
       "_d": 1,
       "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
-      "_n": "Completed Order",
+      "_n": "Order Completed",
       "_p": "user-id",
       "_t": 1388534400,
-      "Completed Order - orderId": 12345,
-      "Completed Order - revenue": 999.98
+      "Order Completed - orderId": 12345,
+      "Order Completed - revenue": 999.98
     },
     "products": [
       {
@@ -42,22 +42,22 @@
         "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
         "_p": "user-id",
         "_t": 1388534400,
-        "Completed Order - category": "gaming",
-        "Completed Order - name": "sony pulse",
-        "Completed Order - price": 199.99,
-        "Completed Order - quantity": 1,
-        "Completed Order - sku": "sony-pulse-sku"
+        "Order Completed - category": "gaming",
+        "Order Completed - name": "sony pulse",
+        "Order Completed - price": 199.99,
+        "Order Completed - quantity": 1,
+        "Order Completed - sku": "sony-pulse-sku"
       },
       {
         "_d": 1,
         "_k": "2b93bdf937c54fc7da2b5c6015c273bf3919c273",
         "_p": "user-id",
         "_t": 1388534401,
-        "Completed Order - category": "gaming",
-        "Completed Order - name": "sony playstation 4",
-        "Completed Order - price": 799.99,
-        "Completed Order - quantity": 1,
-        "Completed Order - sku": "sony-playstation-4-sku"
+        "Order Completed - category": "gaming",
+        "Order Completed - name": "sony playstation 4",
+        "Order Completed - price": 799.99,
+        "Order Completed - quantity": 1,
+        "Order Completed - sku": "sony-playstation-4-sku"
       }
     ]
   }
