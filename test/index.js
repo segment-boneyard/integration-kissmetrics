@@ -5,6 +5,7 @@ var facade = require('segmentio-facade');
 var KISSmetrics = require('..');
 var should = require('should');
 var assert = require('assert');
+var qs = require('qs');
 
 describe('KISSmetrics', function () {
   var kissmetrics;
@@ -151,6 +152,33 @@ describe('KISSmetrics', function () {
       result['layers'].should.eql('chocolate,strawberry,fudge');
       result['Billing Amount'].should.eql(19.95);
       result._n.should.eql('Baked a cake');
+    });
+
+    it('should use a POST request if the payload exceeds a threshold', function(done){
+      var json = test.fixture('track-over-2kb');
+
+      test
+        .set(settings)
+        .track(json.input)
+        .push(function (req) {
+          assert.equal(req.method, 'POST');
+          // parse _data manually so that tests do not depend on stringify ordering
+          assert.deepEqual(qs.parse(req._data), json.output);
+        })
+        .expects(200, done);
+    });
+
+    it('should use a GET request if the payload is below the threshold', function(done){
+      var json = test.fixture('track-clean');
+
+      test
+        .set(settings)
+        .track(json.input)
+        .push(function (req) {
+          assert.equal(req.method, 'GET');
+        })
+        .query(json.output)
+        .expects(200, done);
     });
   });
 
