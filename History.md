@@ -1,4 +1,11 @@
 
+1.0.14 / 2016-08-10
+===================
+
+  * Use a POST request when the payload exceeds a certain size (#24)
+  * Pass along context.{ip,userAgent} as _ip and _ua (#22)
+  * add docker, refactor circle
+
 1.0.13 / 2016-01-15
 ===================
 
