@@ -75,7 +75,7 @@ describe('KISSmetrics', function () {
       });
     });
 
-    describe('completedOrder', function() {
+    describe('orderCompleted', function() {
       it('should map a basic event', function() {
         test.maps('track-completed-order', settings);
       });
