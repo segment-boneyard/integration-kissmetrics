@@ -218,6 +218,26 @@ describe('KISSmetrics', function () {
     it('should be able to identify correctly', function(done){
       kissmetrics.identify(identify, done);
     });
+
+    it('should be able to identify and alias correctly', function(done){
+      var json = test.fixture('identify-alias');
+      test
+        .set(settings)
+        .identify(json.input)
+        .requests(2);
+
+      test
+        .request(0)
+        .query(json.output.identify)
+        .expects(200);
+
+      test
+        .request(1)
+        .query(json.output.alias)
+        .expects(200);
+
+      test.end(done);
+    });
   });
 
   describe('.alias()', function () {
