@@ -21,7 +21,7 @@
     "lodash.map": "^3.1.4",
     "lodash.omit": "^3.1.0",
     "segmentio-facade": "2.x",
-    "segmentio-integration": "^5.0.1",
+    "segmentio-integration": "^5.1.0",
     "unix-time": "^1.0.1",
     "qs": "^6.1.0"
   },
