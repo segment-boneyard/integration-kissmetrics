@@ -1,7 +1,6 @@
 {
-  "name": "integration-kissmetrics",
-  "version": "1.2.0",
-  "private": true,
+  "name": "@segment/integration-kissmetrics",
+  "version": "1.2.1",
   "description": "KISSmetrics server-side integration",
   "author": "Segment <friends@segment.com>",
   "repository": {
